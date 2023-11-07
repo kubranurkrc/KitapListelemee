@@ -1,0 +1,25 @@
+﻿@model List<Kitap>
+
+<table class="table">
+       <thead>
+       <tr>
+       <th scope="col">Id</th>
+       <th scope="col">KitapAd</th>
+       <th scope="col">Yazar</th>
+       <th scope="col">KitapTür</th>
+       <th scope="col">Yayınevi</th>
+       </tr>
+       </thead>
+       <tbody>
+       @foreach (Kitap kitap in Model)
+       {
+       <tr>
+       <th scope="row">@kitap.Id</th>
+       <td>@kitap.KitapAd</td>
+       <td>@kitap.Yazar</td>
+       <td>@kitap.KitapTür</td>
+       <td>@kitap.YayınEvi</td>
+       </tr>
+       }
+       </tbody>
+       </table> 

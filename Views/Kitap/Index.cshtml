@@ -1,0 +1,143 @@
+﻿@Model <KitapListeleme_Model.Models.Kitap>
+<br/>
+<br/>
+
+<div class="border p-4 bg-white">
+    <div class="row">
+        <div class="col-9">
+            <h1 class="text-info">Kitap Listesi</h1>
+        </div>
+        </br>
+        </br>
+        </br>
+
+        <div class="row">
+        <div class="col-5 text-right">
+            <a asp-action="Kitap" class="btn btn-primary form-control">Yeni Kitap Ekleme</a>
+        </div>
+
+        
+        <div class="col-4 text-right">
+            <a asp-action="KitapDüzenleme" class="btn btn-success form-control">Kitap Düzenleme</a>
+        </div>
+
+        <div class="col-3 text-right">
+            <a asp-action="KitapSilme" class="btn btn-danger form-control">Kitap Silme</a>
+        </div>
+</br>
+</br>
+</br>
+</br>
+@* <table class="table">
+<thead>
+    <tr>
+        <td scope="col">Id</td>
+        <td scope="col">KitapAd</td>
+        <td scope="col">Yazar</td>
+        <td scope="col">KitapTür</td>
+        <td scope="col">Yayınevi</td>
+    </tr>
+</thead>
+<tbody>
+    @foreach (Kitap kitap in Model)
+    {
+        <tr>
+            <th scope="row">@kitap.Id</th>
+            <td>@kitap.KitapAd</td>
+            <td>@kitap.Yazar</td>
+            <td>@kitap.KitapTür</td>
+            <td>@kitap.YayınEvi</td>
+        </tr>
+    }
+</tbody>
+</table> *@
+                <table class="table table-info table-striped">
+                   <thead>
+                        <tr>
+                            <th scope="col">Kitap Adı</th>
+                            <th scope="col">Yazar</th>
+                            <th scope="col">Kitap Tür</th>
+                            <th scope="col">Yayınevi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Büyük Selçuklular</th>
+                            <td>Cihan PİYADEOĞLU</td>
+                            <td>Tarih</td>
+                            <td>Kronik</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Selahhatin Eyyubi</th>
+                            <td>Corci ZEYDAN</td>
+                            <td>Tarihi Roman</td>
+                            <td>Armada</td>
+                        </tr>
+                         
+                        <tr>
+                            <th scope="row">Kürk Mantolo Madonna</th>
+                            <td>Sabahhin ALİ</td>
+                            <td>Hikaye</td>
+                            <td>Hayykitap</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Şüphe Asla Uyumaz</th>
+                            <td>Sherlock HOLMES</td>
+                            <td>Hikaye</td>
+                            <td>Martı</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Şah & Sultan</th>
+                            <td>İskender PALA</td>
+                            <td>Roman</td>
+                            <td>Kapı</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Safahat</th>
+                            <td>Mehmet Akif ERSOY</td>
+                            <td>Şiir</td>
+                            <td>Dergah</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Çiçero Yüzyılın Casusu</th>
+                            <td>Dıello ELYESA</td>
+                            <td>Roman</td>
+                            <td>Elhamra</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Tutanamayanlar</th>
+                            <td>Oğuz ATAY</td>
+                            <td>Roman</td>
+                            <td>İletişim</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Var Mısın?</th>
+                            <td>Doğan CÜCELOĞLU</td>
+                            <td>Söyleşi</td>
+                            <td>Kronik</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Şah Mat</th>
+                            <td>Mario MAZANTİ</td>
+                            <td>Roman</td>
+                            <td>Sonsuz</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Kuyucaklı Yusuf</th>
+                            <td>Sabahattin ALİ</td>
+                            <td>Hikaye</td>
+                            <td>Hayykitap</td>
+                        </tr>
+                    </tbody>
+       </table>
+      </div>
+    </div>
+   <br/>
+ </div>
+       
